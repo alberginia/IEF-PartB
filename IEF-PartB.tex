@@ -11,7 +11,7 @@
 \usepackage{graphicx}
 \usepackage{multirow}
 \usepackage{array}
-\usepackage{xcolor}
+\usepackage[table]{xcolor}
 \usepackage{csquotes}
 \usepackage{pgfgantt}
 \usepackage{titlesec}
@@ -35,7 +35,7 @@
 \headheight=14pt
 
 \hypersetup{
-    pdftitle={H2020-MSCA-IF-2014},    % title
+    pdftitle={H2020-MSCA-IF-2015},    % title
     pdfauthor={Jos\'e Pedro Magalh\~aes},
     colorlinks=true,
     citecolor=black,
@@ -73,7 +73,7 @@
           \vspace{1cm}
           
           \textbf{Individual Fellowships (IF)}\\
-          \textbf{Call: H2020-MSCA-IF-2014}
+          \textbf{Call: H2020-MSCA-IF-2015}
           \vspace{2cm}                   
 
           PART B
@@ -105,14 +105,16 @@
 \newcommand\roty[1]{\rotatebox[origin=c]{90}{\parbox{4cm}{\raggedright\textbf{#1}}}}
 \newcommand\MyHead[2]{\multicolumn{1}{l|}{\parbox{#1}{\centering #2}}}
 
+\renewcommand{\arraystretch}{2}
 \noindent\begin{tabular}{|m{2.4cm}|m{1cm}|b{1em}|b{1em}|c|m{2.5cm}|m{2cm}|c|}
+\rowcolor{lightgray}
 \hline
   \textbf{Participants}
-& \MyHead{1cm}{\textbf{Legal\\Entity\\Short\\Name}}
+& \MyHead{1cm}{\cellcolor{lightgray}\textbf{Legal\\Entity\\Short\\Name}}
 & \rotx{Academic}
 & \rotx{Non-academic}
 & \textbf{Country}
-& \MyHead{2.1cm}{\textbf{Dept. / \\Division / \\Laboratory}}
+& \MyHead{2.1cm}{\cellcolor{lightgray}\textbf{Dept. / \\Division / \\Laboratory}}
 & \textbf{Supervisor}
 & \MyHead{2.5cm}{\textbf{Role of\\Partner\\Organisation}} \\
 \hline
@@ -121,6 +123,7 @@
 \underline{Partner} \underline{Organisation} & & & & & & & \\\hline
 - NAME  & & & & & & & \\\hline
 \end{tabular}
+\renewcommand{\arraystretch}{1}
 \vspace{\baselineskip}
 
 Data for non-academic beneficiaries
